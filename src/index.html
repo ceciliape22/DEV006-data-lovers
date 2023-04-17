@@ -1,117 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
+    <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
-
-    <section class="home1" id="home">
-          <!-- Box 1 -->
-          <div class="swiper-slide conatiner">
-              <img src="./img/chihirohome1.jpg" alt="">
-              <div class="home-text">
-                  <h1> Studio Ghibli <br> Movies</h1>
-              </div>
+    <!-- Header -->
+    <header>
+      <!-- Nav -->
+      <div class="nav">
+        <!-- Logo -->
+        <a href="index.html" class="logo"> Studio <span> Ghibli </span> </a>
+        <!-- Nav Links -->
+        <div class="navbar">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="movies.html" class="nav-link">Movies</a></li>   
+        </div>
+      </div>
+    </header>
+    <!-- Home -->
+    <section class="home principal" id="home">
+      
+        <!-- Banner -->
+        <div class="swiper-slide">
+          <div class="home-banner">
+            <img src="img/chihirohome1.jpg" alt="" class="banner-img" />
+            <div class="home-overlay"></div>
+            <div class="home-text container">
+              <h1 class="banner-title">Studio Ghibli <span></span></h1>
+              <p class="banner-description">
+                Welcome to the world of Studio Ghibli Movies! 
+                We hope you'll find something to enjoy on our site.
+              </p>
+            </div>
           </div>
+        </div>
+
+
     </section>
+   <!-- Brief History -->
+   <section class="history container" id="history">
+    <!-- Heading -->
+        <h2 class="heading">A brief history of Studio Ghibli
+        </h2>
+        <div class="history-content">
+            
+            <div class="description-box">
+              <br>
 
-    <!-- Movies -->
-    <section class="movies" id="movies">
-      <h2 class="heading"></h2>
-      <!-- Movies Conatiner -->
-      <div class="movies-container">
-          <!-- Box 1 -->
-          <div class="box">
-         <div class="box-img">
-             <img src="./img/whishper.jpg" alt="Whishper">
-         </div>
-         <h3>Whisper of the Heart</h3>
-         <span>1995 | Romance/Family </span>
-      </div>
-      <!-- Box 2 -->
-      <div class="box">
-          <div class="box-img">
-              <img src="./img/totoro.jpg" alt="Totoro">
-          </div>
-          <h3>My Neighbor Totoro</h3>
-          <span>1988 | Fantasy/Family </span>
-       </div>
-       <!-- Box 3 -->
-       <div class="box">
-          <div class="box-img">
-              <img src="./img/porco.jpg" alt="Porco-Rosso">
-          </div>
-          <h3>Porco Rosso</h3>
-          <span>1992 | Fantasy/Adventure</span>
-       </div>
-       <!-- Box 4 -->
-       <div class="box">
-          <div class="box-img">
-              <img src="./img/kiki.jpg" alt="Kikis">
-          </div>
-          <h3>Kiki's Delivery Service</h3>
-          <span>1989| Adventure/Family</span>
-       </div>
-      <!-- Box 5 -->
-      <div class="box">
-          <div class="box-img">
-              <img src="./img/nausicaa.jpg" alt="Nausicaa">
-          </div>
-          <h3>Nausicaä of the Valley of the Wind</h3>
-          <span>1984 | Fantasy</span>
-       </div>
-       <!-- Box 6 -->
-      <div class="box">
-          <div class="box-img">
-              <img src="./img/marnie.jpg" alt="Marnie">
-          </div>
-          <h3>When Marnie Was There</h3>
-          <span>2014 | Family</span>
-       </div>
-       <!-- Box 7 -->
-      <div class="box">
-          <div class="box-img">
-              <img src="./img/howl.jpg" alt="Howl">
-          </div>
-          <h3>Howl's Moving Castle</h3>
-          <span>2004 | Fantasy</span>
-       </div>
-       <!-- Box 8 -->
-      <div class="box">
-          <div class="box-img">
-              <img src="./img/mononoke.jpg" alt="Mononoke">
-          </div>
-          <h3>Princess mononoke </h3>
-          <span>1997 | Fantasy</span>
-       </div>
-       <!-- Box 9 -->
-      <div class="box">
-          <div class="box-img">
-              <img src="./img/chihiro.jpg" alt="Chihiro">
-          </div>
-          <h3>Spirited Away </h3>
-          <span>2001 | Fantasy/Adventure</span>
-       </div>
-       <!-- Box 10 -->
-      <div class="box">
-          <div class="box-img">
-              <img src="./img/ponyo.jpg" alt="Ponyo">
-          </div>
-          <h3>Ponyo</h3>
-          <span>2008 | Family</span>
-       </div>
-      </div>
-  </section>
+                <p>Studio Ghibli movies and the adorable characters have captured people's hearts from all over the world. There are few people who haven't seen or at least heard of classics like Spirited Away or My Neighbor Totoro. But did you know that it was a long, hard road to fame until Studio Ghibli was eventually recognized? </p>
+                <br>
 
+                <img src="img/arrietycontainer.jpg" alt="" class="game-box-img">
+                <div class="description-text">
+                    <br>
+                    <p>Studio Ghibli was founded in 1985 in Tokyo by the three men, Isao Takahata, Toshio Suzuki and the well-known film producer Hayao Miyazaki. The name Studio Ghibli was based on the Arabic name for "hot sahara wind" because the founders wanted Studio Ghibli to blow new wind through the anime industry. At the same time Ghibli was also the name of an Italian war plane and therefore it also represented Hayao Miyazaki's love for planes and for Italy.</p>
+                    <br>
 
-  <!-- Copyright -->
-  <div class="copyright">
-      <p>&#169; Studio Ghibli All Right Reserved.</p>
-  </div>
-
-    <div id="root"></div>
+                  </div>
+            </div>
+            
+           
+        </div>
+    </section>
+    </section>
+   
+    <!-- Message -->
+    <section class="message container" id="message">
+        <div class="message-text">
+            <h2 class="message-title">Sending a Message</h2>
+            <p>Studio Ghibli's films convey various messages, including the importance of nature, compassion and empathy, dangers of industrialization and war, power of imagination and creativity, personal growth, and the significance of family and community. The studio's films often explore the human experience and challenge viewers to reflect on their own values and beliefs, encouraging them to consider the impact of their actions on the world around them.</p>
+            <a href="movies.html" class="btn">Movies</a>
+        </div>
+        <div class="message-img">
+            <img src="img/kisspng-ghibli-museum-studio-ghibli-animation-film-animato-5af53e411fb0c6.6841529015260216971298.png" alt="">
+        </div>
+    </section>
+    
+   
+ 
+    <!-- Copyright -->
+    <div class="copyright container">
+        <p>&#169; Studio Ghibli All Right Reserved</p>
+        <div class="payments">
+        </div>
+    </div>
+  <!--Link JS-->
     <script src="main.js" type="module"></script>
   </body>
 </html>
