@@ -246,10 +246,11 @@ header.shadow {
       rgba(105, 65, 65, 0.87) 0%,
       rgba(36, 36, 36, 0.87) 0%
     ),
-    url(..//img/chihihome2.jpg);
+    url(./img/chihihome2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 .mhome-text {
   padding-top: 15rem;
@@ -479,4 +480,85 @@ header.shadow {
   .navbar {
     width: 100%;
   }
+}
+/*Container Filters Film CSS*/
+.container_all_filters {
+  display: grid;
+  gap: 2% 0%;
+  justify-content: center;
+  align-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+}
+.box_search {
+  justify-self: stretch;
+  grid-area: box_search;
+}
+.box_filters {
+  justify-self: stretch;
+  grid-area: box_filters;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Order_Alfabetic {
+  display: flex;
+}
+.search {
+  width: 300px;
+  border: none;
+  border-bottom: #55a389 6px solid;
+  background: none;
+  padding: 1% 5%;
+  overflow: hidden;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: beige;
+  outline:none;
+  font-size: small;
+}
+::placeholder {
+  color: rgba(245, 245, 220, 0.658);
+}
+.data_filters {
+  width: 150px;
+  background: none;
+  color: beige;
+  padding: 2.2% 5%;
+  outline:none;
+  border: none;
+  border-bottom: #55a389 4px solid;
+  font-size: small;
+}
+.data_filters option {
+  background: #5d7b63;
+}
+.button_alfabet{
+  width: 40%;
+  margin-top: 6%;
+}
+.box_filter_by{
+  margin: 8px;
+}
+.button_alfabet{
+  width: 40px;
+}
+.cards{
+  max-width: 968px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.img-modal{
+  height: 268px;
+}
+.year{
+  text-align: center;
 }
