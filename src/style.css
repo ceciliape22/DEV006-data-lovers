@@ -290,35 +290,7 @@ header.shadow {
   text-transform: uppercase;
   border-bottom: 1px solid var(--main-color);
 }
-.movies-container {
-  max-width: 968px;
-  margin-right: auto;
-  margin-left: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-  gap: 1rem;
-  margin-top: 2rem;
-}
-.box .box-img {
-  width: 100%;
-  height: 270px;
-}
-.box .box-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.box .box-img img:hover {
-  transform: translateY(-10px);
-  transition: 0.2s all linear;
-}
-.box h3 {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-.box span {
-  font-size: 13px;
-}
+
 /* Making Responsive */
 @media (max-width: 1050px) {
   .container {
@@ -512,7 +484,6 @@ header.shadow {
   background: none;
   padding: 1% 5%;
   overflow: hidden;
-  cursor: pointer;
   top: 0;
   right: 0;
   bottom: 0;
@@ -558,7 +529,13 @@ header.shadow {
 }
 .img-modal{
   height: 268px;
+  width: 180px;
+  display: block;
+  margin: 0 auto;
 }
 .year{
+  text-align: center;
+}
+.info-tittle{
   text-align: center;
 }

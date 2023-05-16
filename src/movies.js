@@ -1,34 +1,16 @@
 
-import { filterMoviesByProducer } from "./data.js";
+import { filterMoviesByProducer, filterMoviesByDirector} from "./data.js";
 import data from "./data/ghibli/ghibli.js"
 
 
 const dataFilms = data.films;
-//console.log(dataFilms)
-const dataMovies = dataFilms.map((film => film.title));
-//console.log(dataMovies)
-// document.addEventListener('DOMContentLoaded',()=>{
-  
-//       showData(dataFilms)
-// });
-//result1
-//console.log(result1)
-filterMoviesByProducer('Hayao Miyazaki')
 
-
-//function filterMovies(showData) {
- // showData.filter(movie => movie.producer === 'Toshio Suzuki')
- // };
-//console.log(filterMovies)
-
-export function showData(dataFilms){
-    const cardsMovies = document.querySelector('#movies-card');    
-      //console.log(cardsMovies)
-
-    dataFilms.map((films) => {
-      const card = document.createElement('div')
-      card.classList.add('card')
-      card.innerHTML =
+const cardsMovies = document.querySelector('#movies-card');
+export function showData(dataFilms){    
+  dataFilms.map((films) => {
+    const card = document.createElement('div')
+    card.classList.add('card')
+    card.innerHTML =
         `
         <img id="${films.title}" src="${films.poster}" alt="${films.title}" class="img-modal">
         <div class="info-card">
@@ -36,21 +18,29 @@ export function showData(dataFilms){
           <p class="year">${films.release_date}</p>
         </div>
         `
-      cardsMovies.appendChild(card);
-       
-      const element = document.getElementById(films.title);
-      element.addEventListener('click', function (e){
-          //console.log(element)
-          openModal(e , movie);
-      })
-    })   
-};
+    cardsMovies.appendChild(card);
+  })
+}
+showData(dataFilms)
 
-showData(result1)
-    
-    
-    
-//console.log(showData)
+ 
+
+const producerSelect = document.getElementById('producers');
+producerSelect.addEventListener('change', function(e){
+  const resultProducer = filterMoviesByProducer(e.target.value);
+  cardsMovies.innerHTML= ''
+  showData(resultProducer)
+});
+
+const directorSelect = document.getElementById('directors');
+directorSelect.addEventListener('change', function(e){
+  const resultDirector = filterMoviesByDirector(e.target.value);
+  cardsMovies.innerHTML= ''
+  showData(resultDirector)
+});
+
+
+
    
 
     
