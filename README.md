@@ -61,9 +61,13 @@ En esta cuarta historia ya tenemos los filtros por director y productor.
 
 Aquí podemos visualizar como quedaría la página con los dos filtrados. 
 
+### Filtrado por director
+
 ![](./src/img/Captura%20de%20pantalla%202023-05-17%20171836.png)
 
+### Filtrado por productor
 
+![](./src/img/Captura%20de%20pantalla%202023-05-17%20172348.png)
 
 
 
