@@ -41,6 +41,19 @@ directorSelect.addEventListener('change', function(e){
 
 
 
-   
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
