@@ -1,11 +1,13 @@
-// estas funciones son de ejemplo
 import data from "./data/ghibli/ghibli.js"
 
-export const example = () => {
-  console.log(data.films);
-};
+    
+export function filterMoviesByProducer(producerName){
+  return data.films.filter(movie => movie.producer === producerName);  
+}
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+export function filterMoviesByDirector(directorName){
+  return data.films.filter(movie => movie.director === directorName); 
+}
+
+
 
